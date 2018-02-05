@@ -1,0 +1,24 @@
+{
+  "name": "lec",
+  "version": "1.0.0",
+  "description": "Leek Ecological Chain",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discountry/lec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/discountry/lec/issues"
+  },
+  "homepage": "https://github.com/discountry/lec#readme",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

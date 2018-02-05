@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="description" content="Welcome to the Leek Ecological Chain.">
+	<meta name="description" content="Meta descriptions are HTML attributes that provide concise explanations of the contents of web pages. They should optimally be between 150-160 characters.">
 	<meta name="author" content="SvenCreations">
 	<link href="images/icons/favicon.png" rel="icon">
 	<!-- Touch icons for android and iOS (Bookmark icons) -->
@@ -29,32 +29,33 @@
 	<meta name="twitter:description" content="A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. Description text will be truncated at the word to 200 characters.">
 	<meta name="twitter:image" content="URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images for this Card should be at least 280px in width, and at least 150px in height. Image must be less than 1MB in size."> -->
 
-	<title>Leek Ecological Chain</title>
-	<link rel="stylesheet" href="https://fonts.proxy.ustclug.org/css?family=Josefin+Sans:400,700">
+	<title>Crowdsale | Leek Ecological Chain</title>
+	<link rel="stylesheet" href="https://fonts.proxy.ustclug.org/css?family=Raleway:400">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/scifi.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body id="minimos-4">
-	<canvas id="drifter"></canvas>
+<body id="minimos-1">
+
 	<div class="preloader abs-center">
 		<div class="spinner"></div>
 	</div>
 
 	<div class="content-wrapper">
 		<div class="v-center">
-			<div class="main-content">
-				<h3 class="mt-0">Launching in<br><span class="st-countdown" style="color: #F8EB31"></span></h3>
-				<p class="main-title">Welcome to the Leek Ecological Chain.</p>
-				<p>A team of talanted men to change the world of blockchain. Coming soon in this summer.</p>
-				<p><a href="crowdsale.html">Join our Crowdsale</a></p>
+			<p id="warning" style="display:none;">Please install <a href="https://metamask.io/" target="_blank">Metamask</a> and unlock your account to proceed.</p>
+			<div class="scifiUI main-content">
+				<div class="inline">
+					<label for="textInput">Claim your share:</label>
+					<input type="text" id="textInput" placeholder="1">
+				</div>
 				<ul>
-					<li><a href="https://ropsten.etherscan.io/token/0x9ff9589e997df7e1c4dd271451165a9c3fb805f1">Token</a></li>
-					<li><a href="https://github.com/discountry/lec">Github</a></li>
-					<li><a href="/white-paper.pdf">White Paper</a></li>
+					<li><a id="buy-link">Buy Now</a></li>
+					<li>You've got: <span id="possession">0</span> LEC</li>
 				</ul>
 			</div>
 		</div>
@@ -71,8 +72,10 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/dependencies.js"></script>
-	<script src="js/backgrounds/drifter.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src="js/truffle-contract.js"></script>
+	<script src="js/buy-token.js"></script>
 
 </body>
 </html>

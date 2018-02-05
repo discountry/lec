@@ -1,0 +1,48 @@
+.scifiUI * {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  outline: none;
+}
+.scifiUI :before,
+.scifiUI :after {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  content: '';
+}
+.scifiUI .inline {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+.scifiUI .inline label {
+  padding-right: 5px;
+}
+.scifiUI input[type=text] {
+  caret-color: white;
+  color: aliceblue;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  height: 50px;
+  border-bottom: 1px solid #00dcdc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+  background: transparent;
+}
+.scifiUI input[type=text]:hover {
+  -webkit-box-shadow: 0 2px 0 0 #00bebe;
+  box-shadow: 0 2px 0 0 #00bebe;
+  border-bottom: 1px solid #00dcdc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.scifiUI input[type=text]:focus {
+  -webkit-box-shadow: 0 2px 0 0 #00bebe;
+  box-shadow: 0 2px 0 0 #00bebe;
+  border-bottom: 1px solid #00dcdc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

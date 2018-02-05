@@ -78,7 +78,7 @@ App = {
   handleSendTransaction: function(event) {
     event.preventDefault();
 
-    var amount = parseInt($('#textInput').val());
+    var amount = parseInt($('#textInput').val())/100;
 
     console.log('Buying ' + amount);
 

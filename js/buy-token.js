@@ -78,7 +78,7 @@ App = {
   handleSendTransaction: function(event) {
     event.preventDefault();
 
-    var amount = parseInt($('#textInput').val())/100;
+    var amount = parseInt($('#textInput').val());
 
     console.log('Buying ' + amount);
 
@@ -94,7 +94,7 @@ App = {
       App.contracts.Crowdsale.deployed().then(function(instance) {
         crowdsaleInstance = instance;
 
-        return crowdsaleInstance.sendTransaction({ from: account, value: web3.toWei(amount, "ether")});
+        return crowdsaleInstance.sendTransaction({ from: account, value: web3.toWei(amount/1000, "ether")});
       }).then(function(result) {
         alert('Transfer Successful!');
         return App.getBalances();

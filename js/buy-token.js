@@ -131,6 +131,10 @@ App = {
 
 $(function() {
   $(window).load(function() {
+    if (typeof web3 === 'undefined') {
+      $('#warning').show();
+      return false;
+    }
     var account = web3.eth.accounts[0];
     if (!account) {
       $('#warning').show();
